@@ -1,0 +1,13 @@
+# Electronic component failure times (hours) - interval frequency table
+# Life test: 120 components tested to failure
+# Suggested distributions: Weibull, Gamma, Log-Normal, Exponential
+# Use: Fit Distributions > Grouped Data tab > upload this file (lower, upper, count format)
+lower,upper,count
+0,100,3
+100,200,17
+200,350,21
+350,500,18
+500,700,26
+700,900,15
+900,1200,16
+1200,1600,4

@@ -1,0 +1,74 @@
+Package: FitVerse
+Type: Package
+Title: Parametric Distribution Fitting and Analysis
+Version: 1.0-3
+Date: 2026-11-13
+Authors@R: c(
+    person("Karuna G.", "Reddy",
+           email   = "karuna.reddy@auckland.ac.nz",
+           role    = c("aut", "cre"),
+           comment = c(ORCID = "0000-0002-9467-4668")),
+    person("M. G. M.", "Khan",
+           email   = "mgm.khan@usp.ac.fj",
+           role    = "aut")
+  )
+Description: Provides a unified, user-friendly interface for fitting parametric
+    probability distributions to continuous univariate data. 'FitVerse' supports
+    52 distribution families spanning symmetric, right-skewed, heavy-tailed,
+    bounded, and extreme-value shapes, and three estimation methods: Maximum
+    Likelihood Estimation (MLE), Method of Moments (MOM), and L-Moments (L-MOM).
+    Automatic best-fit selection is performed using AIC, BIC, and goodness-of-fit
+    tests (Kolmogorov-Smirnov, Anderson-Darling, Cramer-von Mises (CvM)). Every
+    fitted model produces a publication-quality diagnostic plot: a histogram
+    overlaid with the fitted density curve and the estimated PDF formula annotated
+    directly on the figure. An optional interactive version is produced via
+    'plotly'. Additional tools include bootstrap confidence intervals for parameter
+    estimates and return levels, batch fitting across multiple columns for
+    automated workflows and web-upload use cases, JSON serialisation for
+    integration with 'Shiny' web applications, and automated HTML/PDF report
+    generation. 'FitVerse' is designed to support data characterisation in
+    survey sampling, hydrology, and actuarial workflows, where identifying
+    the underlying distribution of a variable is a prerequisite for
+    downstream modelling and inference.
+    L-moment estimation follows Hosking (1990) <doi:10.1111/j.2517-6161.1990.tb01775.x>
+    and Hosking and Wallis (1997, ISBN:9780521430456).
+    Model selection via AIC follows Akaike (1974) <doi:10.1109/TAC.1974.1100705>
+    and via BIC follows Schwarz (1978) <doi:10.1214/aos/1176344136>.
+    Bootstrap confidence intervals follow Efron and Hastie (2016,
+    ISBN:9781107149892).
+License: GPL (>= 3)
+Encoding: UTF-8
+Depends:
+    R (>= 4.1.0)
+Imports:
+    stats,
+    graphics,
+    grDevices,
+    utils,
+    tools,
+    actuar (>= 3.1.0),
+    mc2d (>= 0.1.18),
+    evd (>= 2.3.3),
+    sn (>= 2.1.0),
+    fitdistrplus (>= 1.1.0),
+    lmomco (>= 2.3.7),
+    ggplot2 (>= 3.4.0),
+    goftest (>= 1.2.3),
+    gridExtra (>= 2.3)
+Suggests:
+    shiny (>= 1.7.0),
+    bslib (>= 0.5.0),
+    DT,
+    plotly (>= 4.10.0),
+    testthat (>= 3.0.0),
+    knitr (>= 1.40),
+    rmarkdown (>= 2.20),
+    kableExtra,
+    jsonlite (>= 1.8.0),
+    base64enc,
+    MASS,
+    GeneralizedHyperbolic,
+    truncnorm
+VignetteBuilder: knitr
+NeedsCompilation: no
+Config/roxygen2/version: 8.0.0

@@ -1,0 +1,14 @@
+# Annual maximum daily rainfall (mm) - frequency table
+# Station: Suva, Fiji  |  Record length: 80 years
+# Suggested distributions to try: GEV, Gumbel, Gamma, Log-Normal, Weibull
+# Use: Fit Distributions > Grouped Data tab > upload this file (midpoint, count format)
+midpoint,count
+50,3
+70,17
+90,32
+110,14
+130,6
+150,5
+170,1
+190,1
+210,1

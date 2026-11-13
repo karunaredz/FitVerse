@@ -1,0 +1,14 @@
+# Property insurance claim amounts (USD) - interval frequency table
+# Portfolio: 250 claims from residential property policies
+# Suggested distributions: Log-Normal, Pareto, Gamma, Weibull, Log-Logistic
+# Use: Fit Distributions > Grouped Data tab > upload this file (lower, upper, count format)
+lower,upper,count
+0,500,4
+500,2000,36
+2000,5000,60
+5000,10000,48
+10000,25000,57
+25000,50000,21
+50000,100000,17
+100000,250000,6
+250000,999999,1
